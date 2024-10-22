@@ -39,6 +39,7 @@ model Product {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
+
   order_product order_product[]
   cart_product  cart_product[]
 }

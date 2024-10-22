@@ -1,0 +1,11 @@
+services:
+  database-mysql:
+    image: mysql:latest
+    restart: always
+    ports:
+      - 3307:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: nest
+      MYSQL_DATABASE: payment_demo
+      MYSQL_USER: user
+      MYSQL_PASSWORD: nest
