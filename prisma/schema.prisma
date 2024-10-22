@@ -32,12 +32,12 @@ model User {
 }
 
 model Product {
-  id    String @id @default(cuid())
-  name  String @unique
-  price Float
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id          String   @id @default(cuid())
+  name        String   @unique
+  price       Float
+  description String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 
   order_product order_product[]
   cart_product  cart_product[]
